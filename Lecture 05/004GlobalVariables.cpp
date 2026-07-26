@@ -2,10 +2,11 @@
 
 using namespace std;
 
+int x = 100; // global variable
+
 int main() {
 
-	int n;
-	cin >> n;
+	cout << x << endl;
 
 	return 0;
 }
