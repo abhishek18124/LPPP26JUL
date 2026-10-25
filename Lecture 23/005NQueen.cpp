@@ -6,7 +6,7 @@ https://leetcode.com/problems/n-queens/
 class Solution {
 public:
 
-	bool isValid(int n, vector<string> board, int i, int j) {
+	bool isValid(int n, vector<string>& board, int i, int j) {
 		// check if you can place Qi in the jth column of row i
 
 		// you can do that only Qi upon being placed in the jth column of row i
@@ -53,8 +53,8 @@ public:
 	}
 
 	void f(int n,
-	       vector<string> board,
-	       vector<vector<string>> allBoards,
+	       vector<string>& board,
+	       vector<vector<string>>& allBoards,
 	       int i) {
 		// base case
 		if (i == n) { // you've placed all the n queens on the board
